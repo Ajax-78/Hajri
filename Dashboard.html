@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo"><h2>Hajiri</h2></div>
+            <nav>
+                <ul>
+                    <li class="active"><i class="fas fa-home"></i> Dashboard</li>
+                    <li class="section-title">PEOPLE</li>
+                    <li><i class="fas fa-user"></i> Employee</li>
+                    <li><i class="fas fa-users"></i> Team</li>
+                    <li class="section-title">MANAGEMENT</li>
+                    <li><i class="fas fa-clipboard"></i> Attendance</li>
+                    <li><i class="fas fa-calendar-alt"></i> Leaves</li>
+                    <li><i class="fas fa-wallet"></i> Expenses</li>
+                    <li><i class="fas fa-box"></i> Assets</li>
+                    <li><i class="fas fa-file-alt"></i> Reports</li>
+                    <li><i class="fas fa-coins"></i> Super Coins</li>
+                    <li class="section-title">PAYROLL</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                    <li><i class="fas fa-money-check-alt"></i> EPF, ESI & TDS</li>
+                    <li><i class="fas fa-file-invoice-dollar"></i> Generate Salary Slip</li>
+                    <li class="section-title">COMPANY</li>
+                    <li><i class="fas fa-cogs"></i> Company Setting</li>
+                    <li><i class="fas fa-clock"></i> Attendance Setting</li>
+                    <li><i class="fas fa-user-clock"></i> Leave Setting</li>
+                    <li><i class="fas fa-file-invoice"></i> Salary Setting</li>
+                </ul>
+            </nav>
+            
+            <div class="premium"><p style="font-weight: bolder;">Premium <span><i class="fa-solid fa-crown" style="color: #FFD43B;"></i></span> <span style="padding-left: 90px; padding-top: 36px;">Modify</span></p><small>Valid up to 12 months</small></div>
+            
+            <div class="user-profile">
+             <div class="user-icon">H</div>
+                <div class="user-info">
+                    <p class="user-name">Hajiri</p>
+                    <p class="user-email">hajiri0852@gmail.com</p>
+                </div>
+                <div class="dropdown-icon">></div>
+            </div>
+        </aside>
+        <main class="content">
+            <header>
+                <div class="header-container">
+                    <div class="expense-list">
+                        <h2>Expense Management</h2>
+                        <p>Manage Employee Expense Reimbursements</p>
+                    </div>
+                    <div class="user-info">
+                        <i class="fa-solid fa-inbox"></i>
+                        <span style="font-weight: bold;">My Inbox</span>
+                        <span class="username">M</span>
+                    </div>
+                </div>
+                
+                <nav class="dashboard-menu">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Expense Request</a></li>
+                        <li><a href="#">Company Expense Policy</a></li>
+                        <li><a href="#">Company Wallet</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+           
+            
+            
+            <div class="container">
+                <div class="left-column">
+                    <div class="date-picker">
+                        <label>Date Range</label>
+                        <input type="month" value="2025-01">
+                    </div>
+                </div>
+                <div class="right-column">
+                    <section class="report">
+                        <div class="expense-grid">
+                            <div class="card">
+                            <div class="card-list">
+                             
+                                <i class="fa-solid fa-box-archive" style="color: gray"></i>
+                                <span>Settled Expense</span>
+                            </div >
+                           
+                            <strong class="expense-price"> ₹1,24,420</strong>
+                           <span style="font-size: small; padding-top: 20px;"> <i class="fa-solid fa-arrow-trend-up" style="color: #00b69b;"> 13%</i> Up from past week</span>
+                            </div>
+                            <div class="card">
+                                <div class="card-list">
+                             
+                                    <i class="fa-solid fa-box-archive" style="color: gray; width: 28px;"></i>
+                                    <span>Un-Settled Expense</span>
+                                </div >
+                                <strong class="expense-price"> ₹80,420</strong>
+                           <span style="font-size: small; padding-top: 20px;"> <i class="fa-solid fa-arrow-trend-down" style="color:red"> 13%</i> Down from past week</span>
+                            </div>
+                            <div class="card">
+                                <div class="card-list">
+                             
+                                    <i class="fa-solid fa-box-archive" style="color: gray; width: 28px;"></i>
+                                    <span>In Process</span>
+                                </div >
+                                <strong class="expense-price"> ₹34,420</strong>
+                           <span style="font-size: small; padding-top: 20px;">  24 Request in this week</span>
+                            </div>
+                            <div class="card">
+                                <div class="card-list">
+                             
+                                <i class="fa-solid fa-box-archive" style="color: gray; width: 28px;"></i>
+                                <span>Rejected Expense</span>
+                            </div >
+                            <strong class="expense-price"> ₹1,240</strong>
+                            <span style="font-size: small; padding-top: 20px;"> 12 Request in this week</span>
+                        </div>
+                        <div class="card">
+                            <div class="card-list">
+                         
+                            <i class="fa-solid fa-box-archive" style="color: gray; width: 28px;"></i>
+                            <span>Client Expanse</span>
+                        </div >
+                        <strong class="expense-price"> ₹14,240</strong>
+                        <span style="font-size: small; padding-top: 20px;" ><i class="fa-solid fa-arrow-trend-up" style="color: #00b69b;"> 13%</i>Up from this week</span>
+                    </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Stack Wallet, Categories, and Client Report vertically -->
+            <div class="container">
+                <!-- Company Wallet Section -->
+                <section class="wallet">
+                    <h3>Wallet Details</h3>
+
+                    <div class="company-wallet-card">
+                        <span class="company-name">Company Wallet</span>
+                    <p class="your-balance">Your Balance </p>
+                    <strong class="text-bolder">₹16,05,894</strong>
+                    <div class="spending-limit">
+                        <span>Spending Limit</span>
+                        <strong> ₹10,05,894</strong>
+                    </div>
+
+                    </div>
+                    <div class="transactions">
+                        <h4>Employee Wallet Transactions</h4>
+                        <div class="transaction-list">
+                            <div class="transaction">
+                                <img src="Eleanor1.png" alt="">
+                                <div>
+                                    <p>Eleanor Pena</p>
+                                    <p>Department: Sales Department</p>
+                                </div>
+                                <div>
+                                    <p>₹10,894</p>
+                                    <p>Jan,23</p>
+                                </div>
+                            </div>
+                            <div class="transaction">
+                                <img src="Eleanor2.png" alt="">
+                                <div>
+                                    <p>Eleanor Pena</p>
+                                    <p>Department: IT Department</p>
+                                </div>
+                                <div>
+                                    <p>₹9,894</p>
+                                    <p>Jan,23</p>
+                                </div>
+                            </div>
+                            <div class="transaction">
+                                <img src="Eleanor3.png" alt="">
+                                <div>
+                                    <p>Eleanor Pena</p>
+                                    <p>Department: Relation Manager</p>
+                                </div>
+                                <div>
+                                    <p>₹8,894</p>
+                                    <p>Jan,23</p>
+                                </div>
+                            </div>
+                            <div class="transaction">
+                                <img src="Eleanor4.png" alt="">
+                                <div>
+                                    <p>Eleanor Pena</p>
+                                    <p>Department: Sales Department</p>
+                                </div>
+                                <div>
+                                    <p>₹8,894</p>
+                                    <p>Jan,23</p>
+                                </div>
+                            </div>
+                            <div class="transaction">
+                                <img src="Eleanor5.png" alt="">
+                                <div>
+                                    <p>Eleanor Pena</p>
+                                    <p>Department:Software Develop</p>
+                                </div>
+                                <div>
+                                    <p>₹8,894</p>
+                                    <p>Jan,23</p>
+                                </div>
+                            </div>
+                            <div class="transaction">
+                                <img src="Eleanor6.png" alt="">
+                                <div>
+                                    <p>Eleanor Pena</p>
+                                    <p>Department:Software Develop</p>
+                                </div>
+                                <div>
+                                    <p>₹8,894</p>
+                                    <p>Jan,23</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see-all">
+                            
+                        <div >See all Transactions</div>
+                    </div>
+                    </div>
+                </section>
+
+            <div>
+                
+            
+
+            <div  class="arr">
+
+                 
+                <!-- Categories Section -->
+                <section class="categories">
+                    <div class="categories-header">
+                    <h3>Categories</h3>
+                    <span>Week 1 <i class="fa-solid fa-caret-down"></i></span>
+                </div>
+                <div class="categories-meter">
+                    <div class="categories-text">
+                    <span> <strong style="font-size:30.57px;">10</strong> Types of Expanse</span>
+                    <span style="color: #7A7A7A;">Defined By Your organisation</span>
+                    </div>
+                        <img src="guage-meter.svg" alt="">
+                         
+                    
+                    </div>
+
+                    <div class="categories-card">
+                        <div  class="categories-card-list">
+                            <div>
+                            <span class="dot red"></span> 
+                            <span>Travel & Transportation (20%)</span>
+                        </div>
+                            <span>₹80,240</span>
+                          
+                        </div>
+                        <div class="categories-card-list">
+                            <div>
+                            <span class="dot blue"></span> 
+                            <span>Employee Reimbursements (18%)</span>
+                        </div>
+
+                            <span>₹23,240</span>
+                        </div>
+                        <div class="categories-card-list">
+                            <div>
+                            <span class="dot light-blue"></span> 
+                            <span>Office & Administration(11%)</span>
+                        </div>
+                            <span>₹80,240</span>
+                        </div>
+                        <div class="categories-card-list">
+                            <div>
+                            <span class="dot green"></span> 
+                            <span>Client Engagement & Entertainment(9%)</span>
+                        </div>
+                            <span>₹11,240</span>
+                        </div>
+                        <div class="categories-card-list">
+                            <div>
+                            <span class="dot light-green"></span> 
+                            <span>Training & Development(8%)</span>
+                        </div>
+                            <span>₹10,240</span>
+                        </div>
+                        <div class="categories-card-list">
+                            <div>
+                            <span class="dot dark-green"></span> 
+                            <span>Professional Fees(10%)<span>
+                            </div>
+                            <span>₹20,240</span>
+                        </div>
+                        <div class="categories-card-list">
+                            <div>
+                            <span class="dot orange"></span> 
+                            <span>IT & Software(10%)</span>
+                        </div>
+                            <span>₹80,240</span>
+                        </div>
+                        <div class="categories-card-list">
+                            <div>
+                            <span class="dot megenta"></span> 
+                            <span>Miscellaneous Expanse(6%)</span>
+                        </div>
+                            <span>₹50,240</span>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <!-- Client Report Section -->
+                <section class="client-report">
+                    <div class="client-header">
+                    <h3>Client Report</h3>
+                    <span class="week1">Week 1 <i class="fa-solid fa-caret-down"></i> </span>
+                    </div>
+                    <div class="client-list">
+                    <div class="client-hieght">
+                        <div class="client">
+                            <div class="client-img-text">
+                            <img src="wekrata1.png" alt="">
+                            
+                            <div class="client-meter">
+                                <span>Wekrata</span>
+                                <div>
+                                <meter min="0" max="100" value="50"></meter> 
+                                <span>50%</span>
+                                </div>
+
+                            </div>
+                        </div>
+                            <div class="client-week">
+                                <strong>₹50,240</strong>
+                                <span>This week</span>
+                            </div>
+                        </div>
+
+                        <div class="client-below">
+                            <span style="color: #858585;">totol money spend till now <strong style="color: black;">54,240</strong></span>
+                            <span>View The Details <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="client-hieght">
+                        <div class="client">
+                            <div class="client-img-text">
+                            <img src="wekrata2.png" alt="">
+                            
+                            <div class="client-meter">
+                                <span>Wekrata</span>
+                                <div>
+                                <meter min="0" max="100" value="60"></meter> 
+                                <span>60%</span>
+                                </div>
+
+                            </div>
+                        </div>
+                            <div class="client-week">
+                                <strong>₹84,240</strong>
+                                <span>This week</span>
+                            </div>
+                        </div>
+
+                        <div class="client-below">
+                            <span style="color: #858585;">totol money spend till now <strong style="color: black;">54,240</strong></span>
+                            <span>View The Details <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="client-hieght">
+                        <div class="client">
+                            <div class="client-img-text">
+                            <img src="wekrata3.png" alt="">
+                            
+                            <div class="client-meter">
+                                <span>Wekrata</span>
+                                <div>
+                                <meter min="0" max="100" value="30"></meter> 
+                                <span>30%</span>
+                                </div>
+
+                            </div>
+                        </div>
+                            <div class="client-week">
+                                <strong>₹94,240</strong>
+                                <span>This week</span>
+                            </div>
+                        </div>
+
+                        <div class="client-below">
+                            <span style="color: #858585;">totol money spend till now <strong style="color: black;">54,240</strong></span>
+                            <span>View The Details <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="client-hieght">
+                        <div class="client">
+                            <div class="client-img-text">
+                            <img src="wekrata4.png" alt="">
+                            
+                            <div class="client-meter">
+                                <span>Wekrata</span>
+                                <div>
+                                <meter min="0" max="100" value="90"></meter> 
+                                <span>90%</span>
+                                </div>
+
+                            </div>
+                        </div>
+                            <div class="client-week">
+                                <strong>₹2,14,240</strong>
+                                <span>This week</span>
+                            </div>
+                        </div>
+
+                        <div class="client-below">
+                            <span style="color: #858585;">totol money spend till now <strong style="color: black;">54,240</strong></span>
+                            <span>View The Details <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                        
+                    </div>
+                </section>
+           
+                <!-- Budget Section -->
+                
+            </div>
+            <!-- Budget Section -->
+            <section class="budget">
+                <h3 class="budget-header">Department Budget Allocation</h3>
+                <div class="budget-grid">
+                   
+
+                    <div class="budget-item">
+                     <strong style="font-size: 20px;">₹40,240</strong>   
+                     <span>Sales & Marketing</span>
+                    </div>
+                    <div class="budget-item">
+                        <strong style="font-size: 20px;">₹80,240</strong>
+                    
+                     <span>Operations & Support</span>
+                    </div>
+                    <div class="budget-item">
+                        <strong style="font-size: 20px;">₹20,240</strong>
+                       
+                     <span>HR & Administration</span>
+                    </div>
+                    <div class="budget-item">
+                        <strong style="font-size: 20px;">₹1,23,240</strong>
+                       
+                     <span>Finance & Legal</span>
+                    </div>
+                    <div class="budget-item">
+                        <strong style="font-size: 20px;">₹20,240</strong>
+                 
+                     <span>IT & Engineering</span>
+                    </div>
+                    <div class="budget-item">
+                        <strong style="font-size: 20px;">₹20,240</strong>
+                        
+                     <span>Product Development</span>
+                    </div>
+                    <div class="budget-item">
+                        <strong style="font-size: 20px;">₹20,240</strong> 
+                     <span>Creative & Strategy</span>
+                    </div>
+                    
+                </div>
+            </section>
+
+            </div>
+           
+
+            </div>
+            
+               
+        </main>
+    </div>
+</body>
+</html>
